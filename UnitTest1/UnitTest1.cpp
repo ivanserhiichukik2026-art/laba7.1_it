@@ -1,8 +1,6 @@
-
 #include "pch.h"
 #include "CppUnitTest.h"
-
-#include "C:\Users\qq\source\repos\laba7.1_it\laba7.1_it/laba7.1_it.cpp"
+#include "C:\Users\qq\source\repos\laba7.1_it\laba7.1_it\laba7.1_it.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -17,14 +15,13 @@ namespace UnitTest71Iter
             int r0[] = { -3, 0, 3 };
             int r1[] = { 6, 2, -6 };
             int r2[] = { 1, 9, 4 };
-
             int* a[] = { r0, r1, r2 };
 
-            int S, k;
+            int s, k;
 
-            Calc(a, 3, 3, S, k);
+            Calc(a, 3, 3, s, k);
 
-            Assert::AreEqual(18, S);
+            Assert::AreEqual(18, s);
             Assert::AreEqual(4, k);
             Assert::AreEqual(0, a[0][2]);
             Assert::AreEqual(0, a[1][0]);
@@ -36,7 +33,6 @@ namespace UnitTest71Iter
             int r0[] = { 5, 7, 5 };
             int r1[] = { 2, 3, 2 };
             int r2[] = { 8, 4, 1 };
-
             int* a[] = { r0, r1, r2 };
 
             Sort(a, 3, 3);
